@@ -31,8 +31,8 @@ Use the directive as element on you html:
 ```html
 <breadcrumbs text="You are here" crumbs-class="breadcrumb"></breadcrumbs>
 ```
-You can set a text for breadcrumbs using text attribute **text="some text"**.
+You can set a text for breadcrumbs using `text` attribute `text="some text"`.
 
-You can set a class for breadcrumbs using crumbs-class attribute **crumbs-class="breadcrumb-class"**.
+You can set a class for breadcrumbs using `crumbs-class` attribute `crumbs-class="breadcrumb-class"`.
 
 
