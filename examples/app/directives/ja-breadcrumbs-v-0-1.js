@@ -21,11 +21,13 @@
 
         function Controller($scope, $location) {
             //...........
+
+            console.log($location.url());
             var urlArray = [];
            
            
             $scope.UriObjets = [];
-            $scope.location = window.location.pathname;
+            $scope.location = $location.url();// window.location.pathname;
             urlArray = $scope.location.split("/");
             urlArray = ValidateUrlString(urlArray);
           
