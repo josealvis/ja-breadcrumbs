@@ -22,7 +22,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
+            <li><a ui-sref="page2">Action</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
@@ -36,8 +36,9 @@
 </nav>
 
 </header>
-<main>
-<breadcrumbs text="You are here" crumbs-class="breadcrumb"></breadcrumbs>
+<main class="container">
+   <div ui-view></div>
+    
 </main>
 
 
@@ -45,6 +46,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
+    <!-- ui-router-->
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
     <script src="app/Main.js"></script>
     <script src="app/directives/ja-breadcrumbs-v-0-1.js"></script>
 </body>
