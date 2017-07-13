@@ -3,8 +3,7 @@
     /*
     V.0.1.1
     Dependencias: 
-    -Angular-JS-1.4
-    
+    -Angular-JS-1.4 
     */
 
     angular
@@ -21,17 +20,17 @@
 
         function Controller($scope, $location) {
             //...........
-            var urlArray = [];
-           
+            var urlArray = [];         
            
             $scope.UriObjets = [];
-            $scope.location = window.location.pathname;
+
+            $scope.location = $location.path();
             urlArray = $scope.location.split("/");
             urlArray = ValidateUrlString(urlArray);
           
            
        
-                 $scope.UriObjets = ConverToUriObjet(urlArray);
+            $scope.UriObjets = ConverToUriObjet(urlArray);
             
             ///
 

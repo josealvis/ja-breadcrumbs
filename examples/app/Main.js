@@ -21,6 +21,10 @@
              url: "/page2",
              templateUrl: "pages/page2.html"
          })
+         .state('contactos', {
+             url: "/page2/contactos",
+             templateUrl: "pages/page2.html"
+         })
         ;
     }
 	
