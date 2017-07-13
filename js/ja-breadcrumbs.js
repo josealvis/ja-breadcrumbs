@@ -24,8 +24,9 @@
            
             $scope.UriObjets = [];
 
-            $scope.location = $location.path();
-            urlArray = $scope.location.split("/");
+            $scope.location = $location.absUrl();
+            var url =  removeHost(getHost(),$scope.location);
+            urlArray = url.split("/");
             urlArray = ValidateUrlString(urlArray);
           
            
@@ -35,12 +36,13 @@
             ///
 
             function ConverToUriObjet(strArray) {
+               
                 var UrisObjets = [];
                 var Uri ="/";
 
                 for (var x = 0; x < strArray.length; x++) {  
                     Uri += strArray[x]+"/";
-                    UrisObjets.push({uri: Uri, name: strArray[x]});
+                    strArray[x] != '#' ? UrisObjets.push({uri: Uri, name: strArray[x]}): null;
                 }
                 return UrisObjets;
             }
@@ -54,6 +56,21 @@
                     }
                 }
                 return strArray;
+            }
+
+           function removeHost(host, url){
+           return  url.replace(host, "");
+           }
+
+
+            function getHost(){
+
+              var hostUrl =  $location.protocol()+"://"+$location.host();
+             if($location.port()!== 80){
+               hostUrl += ":"+$location.port()+"/"
+             }
+               return hostUrl;
+
             }
 
         }
