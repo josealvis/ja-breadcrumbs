@@ -8,7 +8,7 @@
     */
 
     angular
-        .module('app')
+        .module('ja-breadcrumbs')
         .directive('breadcrumbs', BreadCrumbs);
 
     function BreadCrumbs($window) {
