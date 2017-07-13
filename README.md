@@ -1,4 +1,4 @@
-# ja-breadcrumbs BETA-DO-NOT-USE-YET
+# ja-breadcrumbs 
 ja-breadcrumbs is an AngularJs's directive to make simples breadcrumbs.
 
 ja-breadcrumbs return a simple  html ul list of links
