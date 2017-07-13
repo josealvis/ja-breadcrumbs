@@ -1,0 +1,11 @@
+{
+  "name": "ja-breadcrumbs",
+  "version": "0.1.1",
+  "scripts": {
+    "start": "node node-server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+ 
+}

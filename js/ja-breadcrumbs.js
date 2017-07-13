@@ -1,14 +1,14 @@
 (function () {
     'use strict';
     /*
-    V.0.1
+    V.0.1.1
     Dependencias: 
     -Angular-JS-1.4
     
     */
 
     angular
-        .module('ja-breadcrumbs')
+        .module('ja-breadcrumbs', [])
         .directive('breadcrumbs', BreadCrumbs);
 
     function BreadCrumbs($window) {
