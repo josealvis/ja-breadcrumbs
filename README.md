@@ -15,15 +15,13 @@ ja-breadcrumbs return a simple  html ul list of links
 
 Add the necessary links for angularJs 1.4 and use your app module on ja-breadcrumbs-v-0-1.js file:
 ```javascript
-/*ja-breadcrumbs-v-0-1.js*/
+/*ja-breadcrumbs.js*/
     angular
-    /*use your app module name in the getting */
-        .module('app-module-name')
-        .directive('breadcrumbs', BreadCrumbs);
+    /*Add ja-breadcrumbs module to your app. */
+        .module('your-app', ['ja-breadcrumbs'])
+        
 
-    function BreadCrumbs($window) {
-        return {
-        ....
+    
 
 ```
 
